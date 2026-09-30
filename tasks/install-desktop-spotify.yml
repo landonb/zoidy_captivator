@@ -20,7 +20,15 @@
     name: spotify
     types: [deb]
     uris: http://repository.spotify.com
-    signed_by: https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg
+    # HSTRY/2026-09-28: Old key no longer works:
+    #   signed_by: https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg
+    # - But causes error on apt-get update:
+    #   Err:2 https://repository.spotify.com stable InRelease
+    #     Sub-process /usr/bin/sqv returned an error code (1), error message is:
+    #       Missing key E1096BCBFF6D418796DE78515384CE82BA52C83A, which is needed to verify signature.
+    # - Note https://www.spotify.com/us/download/linux/ specifies .asc file;
+    #   we just change the extension.
+    signed_by: https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.gpg
     suites: [stable]
     components: [non-free]
     enabled: true
