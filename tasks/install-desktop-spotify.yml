@@ -28,7 +28,7 @@
 - name: Run command "apt-get update" (app-spotify)
   become: true
   ansible.builtin.apt:
-    update_cache: yes
+    update_cache: true
     # Ignore the cache timeout, i.e., always assume the spotify.sources
     # file was just created by the previous task (and that any previous
     # apt-get update wouldn't have downloaded its package list).
