@@ -16,6 +16,9 @@
 
     # apt-file - search for files within Debian packages (command-line interface)
     - apt-file
+    # gdebi(-core) - simple tool to (view and) install deb files (- GNOME GUI).
+    # SAVVY/2026-10-17: Prefer `sudo gdebi foo.deb` vs. `sudo dpkg -i foo.deb`.
+    - gdebi
 
     # "detect if we are running in a virtual machine"
     #  - virt-what
