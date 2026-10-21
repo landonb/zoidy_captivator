@@ -40,6 +40,21 @@
 
     - bash-completion
 
+    # - 'boxes', 'lolcat', and 'FIGlet', for fancy terminal outputs.
+    #
+    # https://formulae.brew.sh/formula/boxes
+    # https://boxes.thomasjensen.com/
+    # https://boxes.thomasjensen.com/boxes-man-1.html
+    # https://github.com/ascii-boxes/boxes/
+    - boxes
+    # https://formulae.brew.sh/formula/lolcat
+    # https://github.com/busyloop/lolcat
+    - lolcat
+    # https://formulae.brew.sh/formula/figlet
+    # https://www.figlet.org/
+    # https://github.com/cmatsuoka/figlet
+    - figlet
+
     # direnv - An app I used to use, but not so much lately. At all
     #   "Utility to set directory specific environment variables"
     - direnv
